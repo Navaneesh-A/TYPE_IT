@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type It - ESP32 Smart Note Clip</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #38bdf8;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 1.5rem;
+            color: #94a3b8;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #0284c7;
+            color: white;
+            padding: 0.8rem 1.8rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            margin: 0.5rem;
+        }
+
+        .btn:hover {
+            background: #0369a1;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e2e8f0;
+        }
+
+        .card h3 {
+            color: #0284c7;
+            margin-bottom: 0.5rem;
+        }
+
+        .price-box {
+            background: #e0f2fe;
+            border: 2px solid #0284c7;
+            text-align: center;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #0369a1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #0f172a;
+            color: #94a3b8;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Type It - ESP32 Smart Note Clip</h1>
+        <p>Distraction-free, screenless lecture recording & Bluetooth note-taking powered by AI summaries.</p>
+        <a href="#order" class="btn">Reserve Now — ₹799</a>
+    </header>
+
+    <div class="container">
+        <h2 style="text-align: center;">Why Choose Type It?</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>🎙️ Screenless Audio Capture</h3>
+                <p>Record full lecture audio clearly without bringing distracting laptops or smartphones to class.</p>
+            </div>
+            <div class="card">
+                <h3>⌨️ External Keyboard Sync</h3>
+                <p>Pair your wireless Bluetooth keyboard to type notes in real-time alongside synced audio recording.
+                </p>
+            </div>
+            <div class="card">
+                <h3>🤖 Automatic AI Summaries</h3>
+                <p>Cloud AI automatically converts lecture recordings into bulleted summaries and extracts task
+                    deadlines.</p>
+            </div>
+        </div>
+
+        <div class="price-box" id="order">
+            <h2>Get Your Smart Note Clip Today</h2>
+            <div class="price">₹799 <span style="font-size: 1rem;">(One-Time Hardware)</span></div>
+            <p>Includes free trial access to AI Cloud Transcription & Assignment Tracking Dashboard.</p>
+            <br>
+            <a href="mailto:support@typeit.com?subject=Pre-Order%20ESP32%20Smart%20Note%20Clip" class="btn">Pre-Order
+                Now</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Contact Us: support@typeit.com | Thiagarajar College Of Engineering, Madurai</p>
+        <p>© 2026 Type It Inc. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
